@@ -1,4 +1,4 @@
-const socket = io("https://drawing-app-six.vercel.app", {
+const socket = io("", {
   transports: ["websocket", "polling"],
 });
 let click = false; // Comprobar cuando se hace click en la pantalla
