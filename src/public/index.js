@@ -1,4 +1,6 @@
-const socket = io();
+const socket = io("", {
+  transports: ["websocket", "polling"],
+});
 let click = false; // Comprobar cuando se hace click en la pantalla
 let moving_mouse = false; //Comprobar movimiento del mouse
 //Posiciones en x e y
